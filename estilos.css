@@ -1,0 +1,103 @@
+
+.container div{
+    width: 300px;
+}
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li{
+    float: left;
+}
+  
+nav li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover{
+    background-color: #111;
+}
+img{
+    width: 100%;
+}
+.card-title{
+    text-align: center;
+}
+.card-description{
+    text-align: justify;
+}
+.url{
+    text-align: center;
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .container{
+        display: flex;
+        flex-direction: row;/*tipo de oreden fila o columna*/
+        flex-wrap: wrap;
+        justify-content: center;/*distribuye de manera horizontal o vertical segun se definio flex direction*/
+        align-items: center;
+    }
+    .card{
+        border: 2px solid rgb(0, 139, 44);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+        margin-bottom: 3px;
+        
+    }
+    
+}
+
+@media only screen and (min-width: 480px) {
+    .container{
+        display: flex;
+        flex-direction: row;/*tipo de oreden fila o columna*/
+        flex-wrap: wrap;
+        justify-content: center;/*distribuye de manera horizontal o vertical segun se definio flex direction*/
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        column-gap: 3px;
+        row-gap: 3px;
+    }
+    .card{
+        border: 2px solid rgb(139, 5, 0);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+        margin-bottom: 3px;
+        
+    }
+}
+@media only screen and (min-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;/*tipo de oreden fila o columna*/
+        flex-wrap: wrap;
+        justify-content: space-around;/*distribuye de manera horizontal o vertical segun se definio flex direction*/
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        column-gap: 3px;
+        row-gap: 3px;
+        
+    }
+    
+    .card{
+        border: 2px solid darkblue;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+        margin-bottom: 3px;
+        
+    }
+}
